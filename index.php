@@ -5,16 +5,9 @@
     require_once BASE_PATH . '/components/templates/head.component.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="/assets/css/example.css">
-</head>
+<?php
+    head("Landing Page");
+?>
 <body>
     <div class="rain front-row pointer-events-none">
     </div>
@@ -33,4 +26,6 @@
     <!--Javascript-->
     <script src="/assets/js/example.js"></script>
 </body>
-</html>
+<?php
+    footer();
+?>
