@@ -1,8 +1,12 @@
 <?php
     require BASE_PATH . '/vendor/autoload.php';
 
+    //Components
     require_once BASE_PATH . '/components/templates/foot.component.php';
     require_once BASE_PATH . '/components/templates/head.component.php';
+
+    //Handlers
+    require_once BASE_PATH . '/handlers/weatherData.handler.php'
 ?>
 
 <?php
