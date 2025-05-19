@@ -10,6 +10,7 @@
         for($i=0;$i<7;$i++){
             $weatherData[$weekdays[$i]] = $temperatures[$i];
         }
+        return $weatherData;
     }
     
 
