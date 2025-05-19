@@ -25,29 +25,25 @@
         <div class="grid grid-cols-5 gap-6 p-8 justify-center">
             <?php
                 //Weather Forecast Logic
-                $weekdays = array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
-                $temperatures = array();
-                for($i=0;$i<7;$i++){
-                    $temperatures[$i] = rand(-10, 40);
-                }
+                $weekdays = getWeatherData();
 
-                for($i = 0;$i< count($weekdays);$i++){
+                foreach($weekdays as $day => $temp){
                     echo '<div class="bg-white bg-opacity-80 rounded-lg shadow p-6 text-center fade-in">';
-                        echo '<div class="font-bold text-xl mb-2">'.$weekdays[$i].'</div>';
-                        echo '<div class="text-4xl font-extrabold mb-2">'.$temperatures[$i].'°C</div>';
-                        if($temperatures[$i] < 0){
+                        echo '<div class="font-bold text-xl mb-2">'.$day.'</div>';
+                        echo '<div class="text-4xl font-extrabold mb-2">'.$temp.'°C</div>';
+                        if($temp < 0){
                             //freezing
                             echo '❄️🥶';
-                        }elseif ($temperatures[$i] >= 0 && $temperatures[$i] < 10) {
+                        }elseif ($temp >= 0 && $temp < 10) {
                             // Cold
                             echo '🧥🌬️';
-                        } elseif ($temperatures[$i] >= 10 && $temperatures[$i] < 20) {
+                        } elseif ($temp >= 10 && $temp < 20) {
                             // Cool
                             echo '🌤️🙂';
-                        } elseif ($temperatures[$i] >= 20 && $temperatures[$i] < 25) {
+                        } elseif ($temp >= 20 && $temp < 25) {
                             // Mild/Comfortable
                             echo '☀️😌';
-                        } elseif ($temperatures[$i] >= 25 && $temperatures[$i] < 30) {
+                        } elseif ($temp >= 25 && $temp < 30) {
                             // Warm
                             echo '😎🔥';
                         } else {
