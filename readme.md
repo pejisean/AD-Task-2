@@ -104,7 +104,7 @@ This project is a minimal web application that serves as a landing page for view
 AD-Task-2
 ├── index.php
 ├── bootstrap.php
-├── bootstrap.php
+├── router.php
 ├── page/
 │   ├── index.php
 │   └── assets/
