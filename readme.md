@@ -103,6 +103,8 @@ This project is a minimal web application that serves as a landing page for view
 ```
 AD-Task-1
 ├── index.php
+├── bootstrap.php
+├── bootstrap.php
 ├── page/
 │   ├── index.php
 │   └── assets/
@@ -115,6 +117,12 @@ AD-Task-1
 │   │   └── example.css
 │   └── js/
 │        └── example.js
+├── handlers/
+│   └── weatherData.handler.php
+├── components/
+│   └── templates/
+│       ├── head.component.php
+│       └── foot.component.php
 └── readme.md
 ```
 > The following should be renamed: name.css, name.js, name.jpeg/.jpg/.webp/.png, name.component.php(but not the part of the `component.php`), Name.utils.php(but not the part of the `utils.php`)
