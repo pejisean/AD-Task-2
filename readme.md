@@ -101,7 +101,7 @@ This project is a minimal web application that serves as a landing page for view
 10. File Structure to follow below.
 
 ```
-AD-Task-1
+AD-Task-2
 ├── index.php
 ├── bootstrap.php
 ├── bootstrap.php
